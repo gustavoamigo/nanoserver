@@ -18,11 +18,11 @@ To start the server.
         });
 
 
-## Code
+## The code
 
 The [http_static_file_server.js](http_static_file_server.js) implements the Web Server
 to serve static files. It inherits [http_server.js](http_server.js), which implements
-part of the HTTP request/response protocol. It uses a request parser [http_request_parser.js](http_request_parser.js), which implements a very simple parser. It should parse almost any http request, but it does not validate it against the full specification. 
+part of the HTTP request/response protocol. It uses a request parser [http_request_parser.js](http_request_parser.js), which implements a very simple parser. It should parse almost any http request, but it does not validate it against the full specification.
 
 The request parser uses a Transform Stream (see [Transform](http://nodejs.org/api/stream.html#stream_class_stream_transform_1)) to split the header from the body. This Transform Stream is in [split_header_body_transform.js](split_header_body_transform.js).
 
