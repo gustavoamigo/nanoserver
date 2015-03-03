@@ -22,18 +22,13 @@ To start the server.
 
 The [http_static_file_server.js](http_static_file_server.js) implements the Web Server
 to serve static files. It inherits [http_server.js](http_server.js), which implements
-part of the HTTP request/response protocol. It uses a request parser [http_request_parser.js](http_request_parser.js), which implements a very simple parser. It should parse almost any http request, but it does not validate it against the full specification. It parses the following rules:
-
-    HTTP-message = request-line *( header-field CRLF ) CRLF [ message-body
-    ]
-    request-line = method SP request-target SP HTTP-version CRLF
-    request-target = absolute-path [ "?" query ]
+part of the HTTP request/response protocol. It uses a request parser [http_request_parser.js](http_request_parser.js), which implements a very simple parser. It should parse almost any http request, but it does not validate it against the full specification. 
 
 The request parser uses a Transform Stream (see [Transform](http://nodejs.org/api/stream.html#stream_class_stream_transform_1)) to split the header from the body. This Transform Stream is in [split_header_body_transform.js](split_header_body_transform.js).
 
 The response is created using [http_response_builder.js](http_response_builder.js).
 
-I think the rest of the code should speak for itself. I created some test using mocha, which should help understanding the code. 
+I think the rest of the code should speak for itself. I created some test using mocha, which should help understanding the code.
 
 ## License
 The whole thing is lincesed under MIT License.
