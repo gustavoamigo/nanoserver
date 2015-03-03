@@ -1,0 +1,27 @@
+{
+  "name": "nanoserver",
+  "version": "0.0.1",
+  "description": "Nano Web Server",
+  "main": "http_static_file_server.js",
+  "scripts": {
+      "test": "mocha spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavoamigo/nanoserver"
+  },
+  "keywords": [
+    "server",
+    "web",
+    "http"
+  ],
+  "author": "Gustavo Amigo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavoamigo/nanoserver/issues"
+  },
+  "homepage": "https://github.com/gustavoamigo/nanoserver",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}
