@@ -30,4 +30,4 @@ created using [http_response_builder.js](http_response_builder.js).
 I think the rest of the code should speak for itself. I created some test using mocha, which should help understanding the code.
 
 ## License
-The whole thing is lincesed under MIT License.
+The whole thing is licensed under MIT License.
